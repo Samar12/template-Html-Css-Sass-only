@@ -1,0 +1,156 @@
+.footer {
+    background-color: $color-black;
+    min-width: 100%;
+    max-width: 100%;
+    margin: auto;
+
+    &__visit {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+
+        &__left > h1 {
+            color:$color-yellow;
+            font-family: 'Roboto', 'sans-serif';
+        }
+        &__left > p {
+            color: #494949;
+            font-family: 'Roboto', 'sans-serif';
+        } 
+
+        &__right > button {
+            background: none;
+            color: #fff;
+            font-family: 'Roboto', 'sans-serif';
+            border: 1px solid rgba(255, 255, 255, .5);
+            border-radius: 3px;
+            padding: 15px;
+            transition: all .5s ease-in-out;
+            margin-top: 1rem;
+
+            &:hover {
+                background-color: #fff;
+                color: $color-black;
+            }
+        }
+        &__right > h3 {
+            color: $color-yellow;
+            font-family: 'Roboto', 'sans-serif';
+        }
+    }
+
+    &__bottom {
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 2fr;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    
+
+    &__info > h3 {
+        color: $color-yellow;
+        font-family: 'Roboto', 'sans-serif';
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    &__info > ul {
+        list-style-type: none;
+        color: #494949;
+        font-family: 'Roboto', 'sans-serif';
+        padding: 0;
+    }
+    &__info > ul > li {
+        padding-bottom: 5px;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+
+    &__form > h3 {
+        color: $color-yellow;
+        font-family: 'Roboto', 'sans-serif';
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    &__form {
+        position: relative;
+        font-family: 'Roboto', 'sans-serif';
+        font-style: italic;
+        & > p {
+            color: #494949;
+        }
+
+        &__inputs > input {
+            background: none;
+            border: none;
+            border-bottom: 1px solid $color-yellow;
+            font-size: 16px;
+            font-family: 'Roboto', 'sans-serif';
+            width: 100%;
+            padding-bottom: 1.6rem;
+            &:hover{
+                border: .5px solid $color-yellow;
+                box-shadow: 4px 4px 4px rgba(248, 170, 24, 0.3);
+                background: none;
+            }
+        }
+
+        &__inputs > button {
+            background: none;
+            color: #fff;
+            font-family: 'Roboto', 'sans-serif';
+            border: 1px solid rgba(255, 255, 255, .5);
+            border-radius: 3px;
+            padding: .3rem;
+            position: absolute;
+            bottom: .8rem;
+            right: .2rem;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+
+            &:hover {
+                background-color: #fff;
+                color: $color-black;
+            }
+            
+        }
+        
+    }
+
+}
+  &__last {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    &__left {
+        color: #494949;
+        font-family: 'Roboto', 'sans-serif';
+        & span:hover{
+            transition: all .4s ease-in-out;
+            cursor: pointer;
+            color: $color-yellow;
+        }
+    }
+    &__right {
+        color: #494949;
+        margin-bottom: 2rem;
+        & > i {
+            margin-right: .3rem;
+        }
+    }
+}
+  
+    
+    
+}

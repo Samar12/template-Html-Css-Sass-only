@@ -1,0 +1,57 @@
+.jumbtron{
+    transition: all 0.4s ease-in-out;
+    width: 23rem;
+    height: 30rem;
+
+    &__date{
+        font-family: 'Roboto', 'sans-serif';
+        color: $color-primary;
+        text-transform: capitalize;
+        padding: .9rem;
+
+    }
+    &__title{
+        color: $color-primary;
+        text-transform: capitalize;
+        margin: 1rem;
+        margin-top: -1.5rem;
+        font-family: 'roboto';
+        font-size: 1.5rem;
+        font-weight: 600;
+
+    }
+    &__description{
+        color: $color-primary;
+        margin: 2rem;
+        font-family: 'roboto';
+        font-size: 1rem;
+        font-weight: 400;
+        opacity: 0;
+    }
+    &__button{
+        width: 20rem;
+        position: absolute;
+        bottom: -2rem;
+        visibility: hidden;
+        height: 0;
+        transition: all .1s ease-in-out;
+
+    }
+
+    &:hover{
+        transform: translate(0,-.8rem);
+
+        .jumbtron__description{
+            opacity: 1;
+            transform: translate(0,-.8rem);
+            
+        }
+        .jumbtron__button{
+            visibility: visible;
+            height: 3rem;
+        }
+
+        
+    }
+
+}

@@ -1,0 +1,184 @@
+
+.card{
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    height: 16rem;
+    margin-bottom: 20px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+
+    &-body-left{
+       float: left;
+       position: relative;
+
+    &__title
+    {
+        font-family:'Roboto', 'sans-serif';
+        font-size: 20px;
+        font-weight: 500;
+        color: black;
+        text-transform: uppercase;
+        margin-left: 8px ;
+        margin-top: 5px ;
+        padding-top: 5px;
+    }
+    &__price{
+        font-size: 12px;
+        color:  #797979;
+        margin-left: 9px ;
+        margin-top: -8px ; 
+        & span{
+            text-decoration: line-through;
+        }
+    }
+
+    &__badge{
+        position: absolute;
+        top: 14rem;
+    }
+}
+    &-body-right{
+        
+        float:right;
+        height: 100%;
+
+        &__icon1{
+            margin: 1rem; 
+            font-size:1rem;
+            background-color: $color-gray-light ;
+            color: $color-primary;
+            border-radius: 1rem;
+            padding: .4rem;
+            visibility: hidden;
+            cursor: pointer;
+            &:hover{
+                background-color: #000;
+            }
+
+            &__favourite{
+                margin: 1rem; 
+                font-size:1rem;
+                color: $color-primary;
+                border-radius: 1rem;
+                padding: .4rem;
+                cursor: pointer;
+                visibility: visible;
+                background-color:rgb(248, 64, 64);
+                }
+        }
+
+        &__icon2{
+            position: absolute;
+            margin: 1rem; 
+            font-size:1rem ;
+            background-color: $color-gray-light ;
+            color: $color-primary;
+            border-radius: 1rem;
+            padding: .4rem;
+            left: inherit;
+            top: 2rem;
+            cursor: pointer;
+            visibility: hidden;
+            &:hover{
+                background-color: #000;
+
+            }
+        }
+
+        &__triangle{
+           
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            border-right: 6rem solid rgb(250, 215, 15);
+            border-top: 6rem solid  transparent;
+            visibility: hidden;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+            &:hover{
+                border-right: 6rem solid #000;
+
+            }
+
+            &__icon{
+                color:$color-primary;
+                position: absolute;
+                 top: -1.9rem; 
+                 right: -4.4rem;
+
+            }
+        }
+   
+    }
+
+&:hover{
+
+    .card-body-right__icon1{
+        visibility: visible;
+    }
+    .card-body-right__icon2{
+        visibility: visible;
+    }
+     .card-body-right__triangle {
+        animation: hover-anmy .2s ease-in-out;
+        visibility: visible;
+    }
+    @keyframes hover-anmy {
+        0% {
+            border-right: 1rem solid #fad70f;
+            border-top: 1rem solid transparent;
+        }
+        10% {
+            border-right: 1rem solid #fad70f;
+            border-top: 1rem solid transparent;
+        }
+        20% {
+            border-right: 2rem solid #fad70f;
+            border-top: 2rem solid transparent;
+        }
+        30% {
+            border-right: 2rem solid #fad70f;
+            border-top: 2rem solid transparent;
+        }
+        50% {
+    
+            border-right: 3rem solid #fad70f;
+            border-top: 3rem solid transparent;
+        }
+        60% {
+            border-right: 4rem solid #fad70f;
+            border-top: 4rem solid transparent;
+        }
+        70% {
+            border-right: 5rem solid #fad70f;
+            border-top: 5rem solid transparent;
+        }
+        80% {
+            border-right: 5rem solid #fad70f;
+            border-top: 5rem solid transparent;
+        }
+        90% {
+            border-right: 6rem solid #fad70f;
+            border-top: 6rem solid transparent;
+        }
+        100% {
+            border-right: 6rem solid #fad70f;
+            border-top: 6rem solid transparent;
+        }
+    }
+    
+
+}
+
+&:hover{
+    transform: scale(1.009);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    background: white;
+    background-size: cover;
+
+ 
+}
+
+}

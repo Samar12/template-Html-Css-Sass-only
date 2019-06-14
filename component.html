@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&subset=latin-ext" rel="stylesheet">
+    <title>Sass</title>
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+        <div class="nav-bar__div">
+            <div class="nav-bar__left">
+                <img src="images/logo.png" class="nav-bar__left__logo" alt="">
+                <span class="nav-bar__left__logo-text">BRAND</span>
+            </div>
+            <div class="nav-bar__right">
+                <ul class="nav-bar__right__list">
+                    <li class="nav-bar__right__list__item">HOME <span class="nav-bar__right__list__item__border-bottom"></span></li>
+                    <li class="nav-bar__right__list__item">PAGES
+                        <i class="fas fa-angle-down"></i>
+                        <span class="nav-bar__right__list__item__border-bottom"></span>
+                        <div class="nav-bar__right__list__item__dropdown">
+                            <div class="nav-bar__right__list__item__dropdown__left">
+                                <h1 class="nav-bar__right__list__item__dropdown__left__h1">FIND YOUR INSPIRATION</h1>
+                                <p class="nav-bar__right__list__item__dropdown__left__p">
+                                    You’ve finally reached this point in your life- you’ve bought your first home,
+                                    moved
+                                    into your very own apartment, moved out of the dorm room or you’re finally
+                                    downsizing
+                                    after all of your kids have left the nest.
+                                </p>
+                                <button class="btn btn--primary">
+                                    shop now
+                                </button>
+                            </div>
+                            <div class="nav-bar__right__list__item__dropdown__right">
+
+                                <div class="nav-bar__right__list__item__dropdown__right__list-left">
+                                    <h3>HOMEPAGE</h3>
+                                    <ul>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                    </ul>
+                                </div>
+                                <div class="nav-bar__right__list__item__dropdown__right__list-med">
+                                    <h3>BLOG</h3>
+                                    <ul>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text <span class="badge badge--primary">new</span>
+                                        </li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                    </ul>
+                                </div>
+                                <div class="nav-bar__right__list__item__dropdown__right__list-right">
+                                    <h3>PAGES</h3>
+                                    <ul>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                        <li>list item text</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-bar__right__list__item">SHOP <span class="nav-bar__right__list__item__border-bottom"></span></li>
+                    <li class="nav-bar__right__list__item">
+                        ICONS <i class="fas fa-angle-down"></i>
+                        <span class="nav-bar__right__list__item__border-bottom"></span>
+                        <div class="nav-bar__right__list__item__icons-dropdown">
+                            <div class="nav-bar__right__list__item__icons-dropdown__left">
+                                <div class="nav-bar__right__list__item__icons-dropdown__img">
+                                    <img src="images/slider.jpeg" alt="">
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__best-ideas">
+                                    <h1 class="nav-bar__right__list__item__icons-dropdown__best-ideas__h1">BEST IDEAS</h1>
+                                    <p class="nav-bar__right__list__item__icons-dropdown__best-ideas__p">
+                                        You’ve finally reached this point in your life- you’ve bought your first home,
+                                        moved
+                                        into your very own apartment, moved out of the dorm room or you’re finally
+                                        downsizing
+                                        after all of your kids have left the nest.
+                                    </p>
+                                    <button class="btn btn--primary">
+                                        Explore
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-bar__right__list__item__icons-dropdown__right">
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x " style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                                <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block">
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__icon">
+                                        <i class="fas fa-chair fa-5x" style="font-size: 2rem"></i>
+                                    </div>
+                                    <div class="nav-bar__right__list__item__icons-dropdown__right__icon-block__title">
+                                        Chair
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-bar__right__list__item">MEGAMENU <span class="nav-bar__right__list__item__border-bottom"></span></li>
+                    <li class="nav-bar__right__list__item">SHORTCODES <span class="nav-bar__right__list__item__border-bottom"></span></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="slider">
+        <div class="slider__overlay"></div>
+        <div class="slider__slider-img">
+            <img src="images/1.jpg" alt="">
+        </div>
+        <div class="slider__caption">
+            <h1>Very Animate.css Friend.</h1>
+            <p>Combine with animate.css. Or just use your own!</p>
+            <p>Bunch of typography effects.</p>
+            <button class="btn btn--primary">Buy this template</button>
+        </div>
+        <div class="slider__icons">
+
+            <div class="slider__icons__icon">
+                <div class="slider__icons__icon__icon"><i class="i fas fa-chair fa-4x"></i></div>
+                <p class="slider__icons__icon__text">CHAIRS</p>
+            </div>
+            <div class="slider__icons__icon">
+                <div class="slider__icons__icon__icon"><i class="fas fa-chair fa-4x"></i></div>
+                <p class="slider__icons__icon__text">CHAIRS</p>
+            </div>
+            <div class="slider__icons__icon">
+                <div class="slider__icons__icon__icon"><i class="fas fa-chair fa-4x"></i></div>
+                <p class="slider__icons__icon__text">CHAIRS</p>
+            </div>
+            <div class="slider__icons__icon">
+                <div class="slider__icons__icon__icon"><i class="fas fa-chair fa-4x"></i></div>
+                <p class="slider__icons__icon__text">CHAIRS</p>
+            </div>
+            <div class="slider__icons__icon">
+                <div class="slider__icons__icon__icon"><i class="fas fa-chair fa-4x"></i></div>
+                <p class="slider__icons__icon__text">CHAIRS</p>
+            </div>
+            <div class="slider__icons__icon">
+                <div class="slider__icons__icon__icon"><i class="fas fa-chair fa-4x"></i></div>
+                <p class="slider__icons__icon__text">CHAIRS</p>
+            </div>
+        </div>
+    </section>
+    <section class="collection" style="margin-top: 3rem;">
+        <p class="collection__title">Poplar Products</p>
+        <p class="collection__description"> check out our latest collections</p>
+        <div class="collection__container">
+            <div class="card" style="background-image: url(images/page1.png)">
+                <div class="card-body-left">
+                    <p class="card-body-left__title">nude</p>
+                    <p class="card-body-left__price"><span>$1499</span> $1099-</p>
+                </div>
+                <div class="card-body-right">
+                    <i class="far fa-heart card-body-right__icon1__favourite "></i>
+                    <i class="far fa-eye card-body-right__icon2"></i>
+                    <div class="card-body-right__triangle "><i class="fas fa-shopping-cart card-body-right__triangle__icon"></i></div>
+                </div>
+            </div>
+            <div class="card" style="background-image: url(images/page2.jpg)">
+                <div class="card-body-left">
+                    <p class="card-body-left__title">laura</p>
+                    <p class="card-body-left__price"><span>$3999</span> $3499-</p>
+                </div>
+                <div class="card-body-right">
+                    <i class="far fa-heart card-body-right__icon1"></i>
+                    <i class="far fa-eye card-body-right__icon2"></i>
+                    <div class="card-body-right__triangle "><i class="fas fa-shopping-cart card-body-right__triangle__icon"></i></div>
+                </div>
+            </div>
+            <div class="card" style="background-image: url(images/page3.jpg)">
+                <div class="card-body-left">
+                    <p class="card-body-left__title">green corner</p>
+                    <p class="card-body-left__price">$2999</p>
+                    <div class="badge badge--primary card-body-left__badge ">new</div>
+                </div>
+                <div class="card-body-right">
+                    <i class="far fa-heart card-body-right__icon1"></i>
+                    <i class="far fa-eye card-body-right__icon2"></i>
+                    <div class="card-body-right__triangle "><i class="fas fa-shopping-cart card-body-right__triangle__icon"></i></div>
+                </div>
+            </div>
+            <div class="card" style="background-image: url(images/page4.png)">
+                <div class="card-body-left">
+                    <p class="card-body-left__title">aurora</p>
+                    <p class="card-body-left__price">$389,-</p>
+                </div>
+                <div class="card-body-right">
+                    <i class="far fa-heart card-body-right__icon1"></i>
+                    <i class="far fa-eye card-body-right__icon2"></i>
+                    <div class="card-body-right__triangle "><i class="fas fa-shopping-cart card-body-right__triangle__icon"></i></div>
+                </div>
+            </div>
+            <div class="card" style="background-image: url(images/page5.png)">
+                <div class="card-body-left">
+                    <p class="card-body-left__title">dining set</p>
+                    <p class="card-body-left__price">$2999</p>
+                    <div class="badge badge--info card-body-left__badge ">50%</div>
+                </div>
+                <div class="card-body-right">
+                    <i class="far fa-heart card-body-right__icon1__favourite "></i>
+                    <i class="far fa-eye card-body-right__icon2"></i>
+                    <div class="card-body-right__triangle "><i class="fas fa-shopping-cart card-body-right__triangle__icon"></i></div>
+                </div>
+            </div>
+            <div class="card" style="background-image: url(images/page6.png)">
+                <div class="card-body-left">
+                    <p class="card-body-left__title">seat chair</p>
+                    <p class="card-body-left__price">$896,-</p>
+                </div>
+                <div class="card-body-right">
+                    <i class="far fa-heart card-body-right__icon1"></i>
+                    <i class="far fa-eye card-body-right__icon2"></i>
+                    <div class="card-body-right__triangle "><i class="fas fa-shopping-cart card-body-right__triangle__icon"></i></div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn--secondary collection__btn" style="width: 6rem;">view store</button>
+    </section>
+    <div class="carouselSliding">
+        <div class="carouselSliding__slide" style="background-image:url(images/bed.jpeg)">
+            <div class="carouselSliding__slide__icon">
+                <i class="i fas fa-chair fa-5x"></i>
+            </div>
+            <div class="carouselSliding__slide__title">
+                <p>BedRoom</p>
+            </div>
+            <div class="carouselSliding__slide__description">
+                <h2 class="carouselSliding__slide__description__description-1">Modern Furnishing Projects</h2>
+                <p class="carouselSliding__slide__description__description-2">New furnishing ideas</p>
+            </div>
+        </div>
+        <div class="carouselSliding__slide" style="background-image:url(images/liv.jpeg)">
+            <div class="carouselSliding__slide__icon">
+                <i class="i fas fa-chair fa-5x"></i>
+            </div>
+            <div class="carouselSliding__slide__title">
+                <p>LivingRoom</p>
+            </div>
+            <div class="carouselSliding__slide__description">
+                <h2 class="carouselSliding__slide__description__description-1">Modern Furnishing Projects</h2>
+                <p class="carouselSliding__slide__description__description-2">New furnishing ideas</p>
+            </div>
+        </div>
+        <div class="carouselSliding__slide" style="background-image:url(images/off.jpeg)">
+            <div class="carouselSliding__slide__icon">
+                <i class="i fas fa-chair fa-5x"></i>
+            </div>
+            <div class="carouselSliding__slide__title">
+                <p>Office</p>
+            </div>
+            <div class="carouselSliding__slide__description">
+                <h2 class="carouselSliding__slide__description__description-1">Modern Furnishing Projects</h2>
+                <p class="carouselSliding__slide__description__description-2">New furnishing ideas</p>
+            </div>
+        </div>
+        <div class="carouselSliding__slide" style="background-image:url(images/LivingRoom.jpg)">
+            <div class="carouselSliding__slide__icon">
+                <i class="i fas fa-chair fa-5x"></i>
+            </div>
+            <div class="carouselSliding__slide__title">
+                <p>BathRoom</p>
+            </div>
+            <div class="carouselSliding__slide__description">
+                <h2 class="carouselSliding__slide__description__description-1">Modern Furnishing Projects</h2>
+                <p class="carouselSliding__slide__description__description-2">New furnishing ideas</p>
+            </div>
+        </div>
+        <div class="carouselSliding__slide">
+            <div class="carouselSliding__slide__plus-icon">
+                <i class="fa fa-plus fa-3x"></i>
+            </div>
+            <p class="carouselSliding__slide__p">Show more</p>
+        </div>
+
+    </div>
+    <section class="ideas">
+        <h1 class="ideas__title">intrior ideas</h1>
+        <p class="ideas__description">keeping things minimal</p>
+        <div class="ideas__container">
+            <div class="jumbtron ideas__container__idea" style="background-image: url('images/art-chairs-color-1350789.jpg') ;">
+                <p class="jumbtron__date">25 march 2017</p>
+                <p class="jumbtron__title">creating the perfect gallery wall</p>
+                <p class="jumbtron__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+                    dolores debitis a recusandae ratione expedita rem eveniet deserunt quae, ullam aliquid ab,
+                    asperiores exercitationem magnam hic nostrum velit labore cum!</p>
+                <button class="btn btn--secondary jumbtron__button">read more</button>
+            </div>
+            <div class="jumbtron  ideas__container__idea" style="background-image: url('images/p1.jpg') ;">
+                <p class="jumbtron__date">25 march 2017</p>
+                <p class="jumbtron__title">making the most out of your kids old bedroom</p>
+                <p class="jumbtron__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+                    dolores debitis a recusandae ratione expedita rem eveniet deserunt quae, ullam aliquid ab,
+                    asperiores exercitationem magnam hic nostrum velit labore cum!</p>
+                <button class="btn btn--secondary jumbtron__button">read more</button>
+            </div>
+            <div class="jumbtron  ideas__container__idea " style="background-image: url('images/p2.jpg') ;">
+                <p class="jumbtron__date">25 march 2017</p>
+                <p class="jumbtron__title">have a look at our new projects</p>
+                <p class="jumbtron__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+                    dolores debitis a recusandae ratione expedita rem eveniet deserunt quae, ullam aliquid ab,
+                    asperiores exercitationem magnam hic nostrum velit labore cum!</p>
+                <button class="btn btn--secondary jumbtron__button">read more</button>
+            </div>
+        </div>
+        <button class="btn btn--secondary ideas__button" style="width: 7rem;">view all posts</button>
+    </section>
+    <div class="fixed" style="background-image: url(images/fixed2.jpg);">
+        <div class="fixed__content">
+            <h2 class="fixed__content__title">our story</h2>
+            <p class="fixed__content__description">we believe on creativity as one of the major forces of progress,
+                we traveled through italy to find exceptional artisans and bring their unique handcrafted objects
+                to connoisseurs everywhere </p>
+            <button class="btn btn--primary" style="width: 9rem; margin-top: 1.7rem;">Read full story</button>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__visit">
+            <div class="footer__visit__left">
+                <h1>VIST OUR SHOWROOM</h1>
+                <p>200 12th Ave, New York, NY 10001, USA</p>
+                <p>Mon-Sat: 10 am - 6 pm | Sun: 12pm - 2 pm</p>
+            </div>
+            <div class="footer__visit__right">
+                <button class="footer__visit__right__get-dirs"><i class="fas fa-map-marker-alt"></i> Get directions</button>
+                <h3><i class="fas fa-phone"></i> 333.278.06622</h3>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__bottom__info">
+                <h3>Browse by</h3>
+                <ul>
+                    <li>Brand</li>
+                    <li>Product</li>
+                    <li>Category</li>
+                </ul>
+            </div>
+            <div class="footer__bottom__info">
+                <h3>Resources</h3>
+                <ul>
+                    <li>Design</li>
+                    <li>Project</li>
+                    <li>Sales</li>
+                </ul>
+            </div>
+            <div class="footer__bottom__info">
+                <h3>Our company</h3>
+                <ul>
+                    <li>About</li>
+                    <li>News</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer__bottom__form">
+                <h3>Sign up for our newsletter</h3>
+                <p>Add your email to sign up for monthly emails and to receive promotional offers.</p>
+                <div class="footer__bottom__form__inputs">
+                    <input type="text" placeholder="Email address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer__last">
+            <div class="footer__last__left">
+                <i class="fas fa-download"></i> <span>Download Model</span> | <span>Sitemap</span> | <span>Privacy
+                    Policy</span>
+            </div>
+            <div class="footer__last__right">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+
+@import 'components/collections';
+@import 'components/carouselSliding';
+@import 'components/btn';
+@import 'components/badge';
+@import 'components/jumbtron';
+@import 'components/card';
+@import 'components/carousel';
+
+@import 'layout/footer.scss';
+@import 'layout/fixedSection';
+@import 'layout/ideas.scss';
+@import 'layout/navbar';
+
+@import 'base/animation';
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utilites';
+
+
